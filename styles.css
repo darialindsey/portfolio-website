@@ -11,4 +11,19 @@ h1 {
 main {
 
 }
-//
+
+
+
+/*make it work on every screen size*/
+/*narrow phone */
+@media (max-width:599px) {
+    main {flex-direction: column; }
+}
+/*medium tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body { font-size: 18px; }
+}
+/*wide screen: computer */
+@media (min-width: 1024px) {
+    body {max-width: 1000px; margin: 0 auto; }
+}
