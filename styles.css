@@ -1,13 +1,33 @@
-* {
-background-color: moccasin;
 
+/* theme variable for day and night + auto theme toggles*/
+/*day theme*/
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --card: #f4f7fb;
+    --border: #d6dde8;
+    --input-bg: #ffffff;
+    --accent: navy;
+    --accent-hover: #1a1aa6;
+    --button-text: #ffffff;
+}
+/*dark theme*/
+:root[data-theme="dark"] {
+    --bg: #121826;
+    --text: #e8ecf3;
+    --card: #1d2638;
+    --border: #33415c;
+    --input-bg: #121826;
+    --accent: #8ab4ff;
+    --accent-hover: #a9c7ff;
+    --button-text: #121826;
 }
 
-//header index html
+/*header index html*/
 h1 {
 
 }
-//main body of text index html
+/*main body of text index html*/
 main {
 
 }
