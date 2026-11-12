@@ -13,10 +13,13 @@ main {
 }
 
 /*form on index html*/
-form {
-    background-color: ;
-    column-count: ;
-    column-wrap:;
+input,
+textarea /*textarea turns form fields into bubbles */ {
+    padding: 0.7rem;
+    border: 1px solid #d7bbde;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
 }
 
 /*make it work on every screen size*/
