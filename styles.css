@@ -47,8 +47,27 @@ footer {
     padding: 2rem 1rem;
 }
 
-
+/*theme button*/
+#theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--card);
+    color: var(--text);
+    border:
+    border-radius: 20px;
+    cursor: pointer;
+}
 /*form on index html*/
+.contact {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--card);
+    border: 
+    border-radius: 12px;
+}
+
 input,
 textarea /*textarea turns form fields into bubbles */ {
     padding: 0.7rem;
