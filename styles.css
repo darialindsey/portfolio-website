@@ -22,15 +22,31 @@
     --accent-hover: #a9c7ff;
     --button-text: #121826;
 }
+/*body*/
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s; 
+}
 
 /*header index html*/
 h1 {
-
+    color: var(--accent);
+    text-align: center;
 }
 /*main body of text index html*/
 main {
-
+    padding: 1rem;
 }
+/*footer*/
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
 
 /*form on index html*/
 input,
