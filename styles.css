@@ -67,6 +67,21 @@ footer {
     border: 
     border-radius: 12px;
 }
+/*centering text on contact form in footer*/
+.contact-intro {
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/*centering input entry boxes for form fields on index html*/
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.35rem;
+}
 
 input,
 textarea /*textarea turns form fields into bubbles */ {
