@@ -2,25 +2,25 @@
 /* theme variable for day and night + auto theme toggles*/
 /*day theme*/
 :root {
-    --bg: #ffffff;
-    --text: #1a1a1a;
-    --card: #f4f7fb;
-    --border: #d6dde8;
-    --input-bg: #ffffff;
-    --accent: navy;
-    --accent-hover: #1a1aa6;
-    --button-text: #ffffff;
+    --bg: #e9cde6;
+    --text: #000000;
+    --card: #d4aed5;
+    --border: #6b3e83;
+    --input-bg: #f2e7ee;
+    --accent: rgb(137, 73, 125);
+    --accent-hover: #de88d8;
+    --button-text: #080106;
 }
 /*dark theme*/
 :root[data-theme="dark"] {
-    --bg: #121826;
-    --text: #e8ecf3;
-    --card: #1d2638;
+    --bg: #010510;
+    --text: #e9d0e3;
+    --card: #d4aed5;
     --border: #33415c;
-    --input-bg: #121826;
-    --accent: #8ab4ff;
-    --accent-hover: #a9c7ff;
-    --button-text: #121826;
+    --input-bg: #00040c;
+    --accent: rgb(137, 73, 125);
+    --accent-hover: #de88d8;
+    --button-text: #d4aed5;
 }
 /*body*/
 body {
@@ -82,11 +82,13 @@ footer {
     flex-direction: column; 
     gap: 0.35rem;
 }
-
+/*textarea turns form fields into bubbles */
 input,
-textarea /*textarea turns form fields into bubbles */ {
+textarea {
     padding: 0.7rem;
-    border: 1px solid #d7bbde;
+    background: var(--input-bg);
+    color: var(--text)
+    border: 1px solid;
     border-radius: 10px;
     font-size: 1rem;
     font-family: inherit;
