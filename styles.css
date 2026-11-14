@@ -27,7 +27,12 @@ nav {
     display: flex;
     align-items: center;
     padding: 1rem;
-    
+    gap: 1.5rem; /*spacing between links in nav bar */
+    border-bottom: 1px solid var(--border);
+}
+/*places theme toggle into nav bar*/
+nav #theme-toggle {
+    margin-left: auto;
 }
 
 /*body*/
