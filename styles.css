@@ -22,6 +22,14 @@
     --accent-hover: #de88d8;
     --button-text: #080106;
 }
+/*nav bar*/
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
 /*body*/
 body {
     background-color: var(--bg);
