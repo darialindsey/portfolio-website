@@ -94,7 +94,7 @@ footer {
 /*card grid display on portfolio-two html */
 .card-grid {
     display: grid; /*grid */
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /*auto-fit fits as many cards as there is room for, cards should sit side by side on wide screen and stack on a narrow one*/
     gap: 1.5rem;
 }
 .card {
@@ -104,7 +104,30 @@ footer {
     border-radius: 12px; /*rounded card edges*/
 }
 
+/*terminal text on index html*/
+.terminal {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1rem 1.25rem;
+    background: var(--input-bg); /*linked to root background color*/
+    color: var(--accent); /*linked to root accent color*/
+    border: 1px solid var(--border); /*linked to root border color*/
+    border-radius: 10px /*rounded edges*/
 
+}
+.terminal pre {
+    margin: 0;
+    white-space: pre-wrap; /*contains text inside border*/
+    font-family: inherit; 
+}
+#terminal-text::after {
+    content:"green box"
+    animation: blinks 1s steps (2) infinite;
+
+}
+@keyframes blink {
+    to {visibility: hidden; }
+}
 
 /*form on index html*/
 .contact {

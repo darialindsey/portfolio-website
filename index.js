@@ -21,3 +21,9 @@ systemQuery.addEventListener("change", function() {
 });
 
 applyTheme();
+
+//typing animation for hero terminal on index html
+const terminalText = document.getElementById("terminal-text");
+if (terminalText) {
+    const fullText = 
+}
