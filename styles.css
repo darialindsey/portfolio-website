@@ -91,6 +91,21 @@ footer {
     cursor: pointer;
     padding: 0.4rem 1rem; /*aligned theme toggle with other nav links */
 }
+/*card grid display on portfolio-two html */
+.card-grid {
+    display: grid; /*grid */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+.card {
+    padding: 1.25rem; 
+    background: var(--card); /*background color for each card that links to root card colors */
+    border: 1px solid var(--border); /*border for each card linking to root border colors*/
+    border-radius: 12px; /*rounded card edges*/
+}
+
+
+
 /*form on index html*/
 .contact {
     max-width: 600px;
