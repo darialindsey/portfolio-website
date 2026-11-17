@@ -86,7 +86,6 @@ footer {
 
 /*theme button*/
 #theme-toggle {
-    position: fixed;
     top: 1rem;
     right: 1rem;
     background: var(--card);
@@ -94,6 +93,7 @@ footer {
     border: 1px solid var(--border);
     border-radius: 20px;
     cursor: pointer;
+    padding: 0.4rem 1rem; /*aligned theme toggle with other nav links */
 }
 /*form on index html*/
 .contact {
