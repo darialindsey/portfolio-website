@@ -47,6 +47,9 @@ nav #theme-toggle {
 /*resize profile photo */
 #profile-photo { 
     width: 400px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover; 
     border: 4px solid var(--accent); /*added border to image and linked to root accent colors */
     border-radius: 50%; /*rounded profile photo by rounding border edges */
 }
@@ -82,8 +85,6 @@ footer {
 
 /*theme button*/
 #theme-toggle {
-    top: 1rem;
-    right: 1rem;
     background: var(--card);
     color: var(--text);
     border: 1px solid var(--border);
@@ -112,7 +113,7 @@ footer {
     background: var(--input-bg); /*linked to root background color*/
     color: var(--accent); /*linked to root accent color*/
     border: 1px solid var(--border); /*linked to root border color*/
-    border-radius: 10px /*rounded edges*/
+    border-radius: 10px; /*rounded edges*/
 
 }
 .terminal pre {
@@ -121,12 +122,14 @@ footer {
     font-family: inherit; 
 }
 #terminal-text::after {
-    content:"green box"
-    animation: blinks 1s steps (2) infinite;
+    content:"\2588"; /*block cursor */
+    animation: blink 1s steps(1) infinite; /*blinking cursor*/
 
 }
 @keyframes blink {
-    to {visibility: hidden; }
+    50% {
+        opacity: 0; 
+    }
 }
 
 /*form on index html*/

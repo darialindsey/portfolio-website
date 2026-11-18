@@ -24,6 +24,22 @@ applyTheme();
 
 //typing animation for hero terminal on index html
 const terminalText = document.getElementById("terminal-text");
+
 if (terminalText) {
-    const fullText = 
+    const fullText = terminalText.textContent; 
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let i = 0;
+
+    function typeNext() {
+        if (i < fullText.length) {
+            terminalText.textContent += fullText.charAt(i);
+            i++;
+            setTimeout(typeNext, 40);
+        }
+    }
+
+    if (!reduceMotion) {
+        terminalText.textContent = "";
+        typeNext();
+    }
 }
