@@ -46,6 +46,8 @@ nav #theme-toggle {
 }
 /*resize profile photo */
 #profile-photo { 
+    display: block; /*makes photo take it's own line away from text*/
+    margin: 0 auto; /*0 margin means leftover space is split evenly on right and left = centered*/
     width: 400px;
     max-width: 100%;
     aspect-ratio: 1/1;
@@ -112,7 +114,6 @@ footer {
     padding: 1rem 1.25rem;
     background: var(--input-bg); /*linked to root background color*/
     color: var(--accent); /*linked to root accent color*/
-    border: 1px solid var(--border); /*linked to root border color*/
     border-radius: 10px; /*rounded edges*/
     text-align: left;
 
@@ -132,6 +133,7 @@ footer {
         opacity: 0; 
     }
 }
+
 
 /*form on index html*/
 .contact {
