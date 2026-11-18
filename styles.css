@@ -114,6 +114,7 @@ footer {
     color: var(--accent); /*linked to root accent color*/
     border: 1px solid var(--border); /*linked to root border color*/
     border-radius: 10px; /*rounded edges*/
+    text-align: left;
 
 }
 .terminal pre {
