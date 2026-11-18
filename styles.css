@@ -35,13 +35,13 @@ nav #theme-toggle {
     margin-left: auto;
 }
 
-/*formatting columns on index html for experience and skills */
-.columns {
+/*Displays the Experience and Skills sections side by side */
+.experience-skills-columns {
     display: flex;
     gap: 2rem;
 }
 
-.columns section {
+.experience-skills-columns section {
     flex: 1;
 }
 /*resize profile photo */
