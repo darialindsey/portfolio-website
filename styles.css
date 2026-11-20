@@ -28,7 +28,7 @@ nav {
     align-items: center;
     padding: 1rem;
     gap: 1.5rem; /*spacing between links in nav bar */
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); /*border sits on it own line with room */
 }
 /*places theme toggle into nav bar*/
 nav #theme-toggle {
