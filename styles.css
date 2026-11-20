@@ -54,6 +54,8 @@ nav #theme-toggle {
     object-fit: cover; 
     border: 4px solid var(--accent); /*added border to image and linked to root accent colors */
     border-radius: 50%; /*rounded profile photo by rounding border edges */
+    margin-bottom: 5rem; /*space cushion*/
+    
 }
 
 /*body*/
@@ -63,7 +65,13 @@ body {
     font-family: monospace;
     line-height: 1.6;
     margin: 0;
-    transition: background-color 0.3s, color 0.3s; 
+    margin-bottom: 2rem; /*space cushion*/
+   
+}
+
+    
+
+
 }
 
 a {
