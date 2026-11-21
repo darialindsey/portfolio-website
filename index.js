@@ -24,7 +24,7 @@ applyTheme();
 
 //typing animation for hero terminal on index html
 const terminalText = document.getElementById("terminal-text");
-
+//if user opts for no animation, display text in full
 if (terminalText) {
     const fullText = terminalText.textContent; 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -41,5 +41,17 @@ if (terminalText) {
     if (!reduceMotion) {
         terminalText.textContent = "";
         typeNext();
+    }
+}
+const contactForm = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // stops page from reloading when submit is clicked
+        const name = document.getElementById(".value.trim();
+            formMessage.textContent = "Thanks, " + name + "! I'll get back to you soon.";
+            contactForm.reset(); //clears the boxes after submit
+        )
     }
 }
