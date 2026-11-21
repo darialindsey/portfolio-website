@@ -71,9 +71,6 @@ body {
 
     
 
-
-}
-
 a {
     color: var(--accent);
 }
@@ -207,7 +204,7 @@ textarea:focus {
 /*make it work on every screen size*/
 /*narrow phone */
 @media (max-width:599px) {
-    main {flex-direction: column; }
+    .columns {flex-direction: column; }
 }
 /*medium tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
