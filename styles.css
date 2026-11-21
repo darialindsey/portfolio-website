@@ -198,7 +198,10 @@ textarea:focus {
 .contact-form button:hover {
     background: var(--accent-hover); /*submit button highlights pink on hover*/
 }
-/**/
+/*social links*/
+.social-links {
+    margin-bottom: 0 0.75rem;
+}
 
 
 /*make it work on every screen size*/
