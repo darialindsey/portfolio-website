@@ -1,5 +1,5 @@
 //initializing buttons and system preferences
-//used ai to add day/night theme toggle
+//used ai assiatnce to add day/night theme toggle and know where to start
 const root = document.documentElement;
 const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
 const modes = ["auto", "light", "dark"];
@@ -11,20 +11,23 @@ function applyTheme() {
     root.setAttribute("data-theme", actual);
     themeButton.textContent = "Theme: " + mode;
 }
-themeButton.addEventListener("click", function () {
+if (themeButton) {
+    themeButton.addEventListener("click", function () {
     mode = modes[(modes.indexOf(mode) + 1) % modes.length];
     localStorage.setItem("theme-mode", mode);
     applyTheme();
 });
+}
 systemQuery.addEventListener("change", function() {
     if (mode === "auto") applyTheme();
 });
+
 
 applyTheme();
 
 //typing animation for hero terminal on index html
 const terminalText = document.getElementById("terminal-text");
-
+//if user opts for no animation, display text in full
 if (terminalText) {
     const fullText = terminalText.textContent; 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -43,3 +46,14 @@ if (terminalText) {
         typeNext();
     }
 }
+const contactForm = document.getElementById("contact-form");
+const formMessage = document.getElementById("form-message");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // stops page from reloading when submit is clicked
+        const name = document.getElementById("name").value.trim();
+            formMessage.textContent = "Thanks, " + name + "! I'll get back to you soon.";
+            contactForm.reset(); //clears the boxes after submit
+        });
+    }

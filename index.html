@@ -9,7 +9,7 @@
     <body> 
         <!--adding nav so that all pages are linked to and to include theme toggle-->
         <!--realizing at this point that I will need the theme toggle for each page, will update soon-->
-        <nav>
+        <nav aria-label="Main navigation"> <!--screen readers say "Main navigation"-->
             <a href="index.html">Home</a>
             <a href="portfolio-two.html">Projects</a>
             <!--#contact navigates to contact form on index html from nav bar-->
@@ -26,9 +26,10 @@
                 <!--terminal text design using ai for html and css style-->
 <!--every line inside of <pre> starts at the left edge with no indent, formatted accordingly-->
             <pre id="terminal-text">> whoami
-Daria Lindsey
-> cat about.txt
-Career changer learning PERN full-stack development.
+daria lindsey 
+>cat about.txt
+junior developer +
+career changer learning PERN full-stack development.
 > ls skills/
 HTML CSS Git JavaScript_(loading)</pre>
                 </div>
@@ -36,7 +37,7 @@ HTML CSS Git JavaScript_(loading)</pre>
             </header>
                 <!--"about" section that can be linked back to via nav bar later-->
                 <section class="about">
-                    <img id="profile-photo" src="DLH2.png" alt="Photo of DL">
+                    <img id="profile-photo" src="DLH2.png" alt="Photo of Daria Lindsey, wearing a light blue blouse, with a plain white background.">
                     <!--link photo here-->
                 </section>
                 <!--experience and skills section divide-->
@@ -45,18 +46,24 @@ HTML CSS Git JavaScript_(loading)</pre>
                 <!--first column on the left will be work experience-->
                 <section class="experience">
                     <h2>Experience</h2>
+                    <ul>
+                        <li>Professional Matchmaker</li>
+                        <li>Field Supervisor</li>
+                        <li>Service Consultant</li>
+                        <li>Music Hotel Manager</li>
+                    </ul>
+                    
                 </section>
                 <!--column on the right will be skills-->
                 <section class="skills">
                     <h2>Skills</h2>
                     <ul>
-                        <li></li>
-                        <li>Learning</li>
-                        <li>Next Up: </li>
+                        <li>Troubleshooting, following specs, safety and quality checks</li>
+                        <li>Articulating and Implementing Company SOPs </li>
+                        <li>Collaboration</li>
                     </ul>
-                    
-
                 </section>
+
 
 
             </div>
@@ -66,9 +73,11 @@ HTML CSS Git JavaScript_(loading)</pre>
         </main>
 
     <footer>
+        <p> </p>
         <section id="contact" class="contact">
             <h2>Let's stay in touch:</h2>
-            <p class="contact-intro">Have a question or want to work together? Send me a message.</p>
+            <!--contact intro override-->
+            <p class="contact-intro override">Have a question or want to work together? Send me a message.</p> 
             <form class="contact-form" id="contact-form">
                 <div class="form-group">
                 <!--"Contact Me" Form-->
@@ -90,11 +99,12 @@ HTML CSS Git JavaScript_(loading)</pre>
                     <button type="submit">Submit</button>
                 </form>
 
-            <p id="form-message"></p>
+            <p id="form-message" aria-live="polite"></p><!--added screen reader for contact form-->
         </section>
-
-        <a href="https://github.com/darialindsey/portfolio-website.git"></a>
-        <a href="linkedin-profile-url"></a>
+        <p class="social-links">
+            <a href="https://github.com/darialindsey">Github</a>
+            <a href="https://www.linkedin.com/in/darialindsey">LinkedIn</a>
+        </p>
         
         
     </footer>

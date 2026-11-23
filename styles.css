@@ -28,7 +28,7 @@ nav {
     align-items: center;
     padding: 1rem;
     gap: 1.5rem; /*spacing between links in nav bar */
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); /*border sits on it own line with room */
 }
 /*places theme toggle into nav bar*/
 nav #theme-toggle {
@@ -54,6 +54,8 @@ nav #theme-toggle {
     object-fit: cover; 
     border: 4px solid var(--accent); /*added border to image and linked to root accent colors */
     border-radius: 50%; /*rounded profile photo by rounding border edges */
+    margin-bottom: 5rem; /*space cushion*/
+    
 }
 
 /*body*/
@@ -63,8 +65,11 @@ body {
     font-family: monospace;
     line-height: 1.6;
     margin: 0;
-    transition: background-color 0.3s, color 0.3s; 
+    margin-bottom: 2rem; /*space cushion*/
+   
 }
+
+    
 
 a {
     color: var(--accent);
@@ -190,13 +195,26 @@ textarea:focus {
 .contact-form button:hover {
     background: var(--accent-hover); /*submit button highlights pink on hover*/
 }
-/**/
+/*override pair, second override trumps first in an obvious way*/
+.override {
+    color: var(--text); /*overrode to change color to root text color black*/
+    font-size: 1rem; /*overrode font size*/
+}
+.override {
+    color: (--accent); /*overrode first override to change color to root accent color*/
+    font-size: 1.25rem; /*overrode font size again*/
+
+}
+/*social links*/
+.social-links {
+    margin-bottom: 0 0.75rem;
+}
 
 
 /*make it work on every screen size*/
 /*narrow phone */
 @media (max-width:599px) {
-    main {flex-direction: column; }
+    .columns {flex-direction: column; }
 }
 /*medium tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
