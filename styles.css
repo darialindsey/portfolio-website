@@ -195,6 +195,16 @@ textarea:focus {
 .contact-form button:hover {
     background: var(--accent-hover); /*submit button highlights pink on hover*/
 }
+/*override pair, second override trumps first in an obvious way*/
+.override {
+    color: var(--text); /*overrode to change color to root text color black*/
+    font-size: 1rem; /*overrode font size*/
+}
+.override {
+    color: (--accent); /*overrode first override to change color to root accent color*/
+    font-size: 1.25rem; /*overrode font size again*/
+
+}
 /*social links*/
 .social-links {
     margin-bottom: 0 0.75rem;
